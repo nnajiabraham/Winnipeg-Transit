@@ -1,0 +1,34 @@
+{
+  "name": "transit-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnajiabraham/Winnipeg-Transit.git"
+  },
+  "author": "Abraham Nnaji <nnajiabraham@gmail.com>",
+  "license": "MIT",
+  "description": "A transit app showing bus times",
+  "bugs": {
+    "url": "https://github.com/nnajiabraham/Winnipeg-Transit/issues"
+  },
+  "homepage": "https://github.com/nnajiabraham/Winnipeg-Transit#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --watch",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0"
+  }
+}
