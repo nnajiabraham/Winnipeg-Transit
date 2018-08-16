@@ -1,34 +1,26 @@
 {
-  "name": "transit-app",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nnajiabraham/Winnipeg-Transit.git"
-  },
-  "author": "Abraham Nnaji <nnajiabraham@gmail.com>",
-  "license": "MIT",
-  "description": "A transit app showing bus times",
-  "bugs": {
-    "url": "https://github.com/nnajiabraham/Winnipeg-Transit/issues"
-  },
-  "homepage": "https://github.com/nnajiabraham/Winnipeg-Transit#readme",
+  "description": "react-boilerplate",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --watch",
-    "build": "webpack --mode production"
+    "dev-server": "webpack-dev-server --mode production ",
+    "build": "webpack --mode production --display-error-details"
   },
-  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0"
-  },
-  "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "style-loader": "^0.21.0"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
