@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import GoogleMapReact from 'google-map-react';
 
 class App extends React.Component {
+
+    static defaultProps = {
+        center: {
+            lat: 49.90,
+            lng: -97.14
+        },
+        zoom: 11
+    };
+
     render () {
         return (
-            <div>
+            <div style={{ height: '100vh', width: '100%' }}>
                 <p>Plan your trip here</p>
                 <Info />
-                <MapView />
+                <GoogleMapReact
+                    bootstrapURLKeys={{ key: '' }}
+                    defaultCenter={this.props.center}
+                    defaultZoom={this.props.zoom}
+                />>
             </div>
         )
     }
@@ -53,17 +67,17 @@ class Info extends React.Component{
     }
 }
 
-class MapView extends React.Component{
-    render(){
-        return (
-            <div>
-                <p>Render Google maps to ensure address accuracy</p>
-                <div >
-                    map render
-                </div>
-            </div>
-        );
-    }
-}
+// class MapView extends React.Component{
+//     render(){
+//         return (
+//             <div>
+//                 <p>Render Google maps to ensure address accuracy</p>
+//                 <div className="googleMap" >
+//                     map render
+//                 </div>
+//             </div>
+//         );
+//     }
+// }
 
 ReactDom.render(<App />, document.getElementById('app'));
